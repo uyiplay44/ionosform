@@ -236,17 +236,11 @@ a {
   padding: 20px;
   position: relative;
 }
-.circle {
-  position: relative;
+.footer span a {
+  color: #465a75;
 }
-.circle::before {
-  content: "";
-  position: absolute;
-  transform: translateY(-50%);
-  height: 10px;
-  width: 10%;
-  background-color: green;
-  border-radius: 100%;
+.footer span a:hover {
+  color: #1474c4;
 }
 .input-bar > input {
   align-items: center;
@@ -296,3 +290,12 @@ a {
   margin-left: 20px;
   text-align: center;
 }
+.error {
+  display: hidden;
+  color: red;
+}
+/* .footer-color span a {
+  color: #001b41;
+  text-decoration: #001b41;
+  display: none;
+} */
