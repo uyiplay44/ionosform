@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
 
-app = Flask(__name__)
+app = Flask(__name__ , static_url_path='/static', static_folder='./static')
+
 app.secret_key = 'your_secret_key'  # Replace with your secret key
 
 # Flask-Mail configuration for Gmail
