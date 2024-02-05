@@ -1,6 +1,6 @@
 {
   "routes": [
-    { "handle": "filesystem", "src": "/static/(.*)" },
+    { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/app.py", "dest": "/app.py" },
     { "src": "/(.*)", "dest": "/app.py" }
   ],
